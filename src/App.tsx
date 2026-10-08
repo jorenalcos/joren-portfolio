@@ -2,6 +2,8 @@ import { Navbar } from './components/navigation/Navbar'
 import { SmoothScroll } from './components/layout/SmoothScroll'
 import { CustomCursor } from './components/ui/CustomCursor'
 import { Hero } from './components/sections/Hero'
+import { About } from './components/sections/About'
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
 
       <main>
         <Hero />
+        <About />
 
         <section
           id="work"
