@@ -4,7 +4,7 @@ import { CustomCursor } from './components/ui/CustomCursor'
 import { Hero } from './components/sections/Hero'
 import { About } from './components/sections/About'
 import { Stack } from './components/sections/Stack'
-
+import { Projects } from './components/sections/Projects'
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Hero />
         <About />
         <Stack />
+        <Projects />
 
         <section
           id="work"
