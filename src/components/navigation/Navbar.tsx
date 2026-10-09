@@ -2,6 +2,7 @@ import { Container } from '../layout/Container'
 
 const links = [
   { label: 'About', href: '#about' },
+   { label: 'Stack', href: '#stack' },
   { label: 'Work', href: '#work' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
