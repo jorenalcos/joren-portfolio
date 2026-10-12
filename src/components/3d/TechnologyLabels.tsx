@@ -38,7 +38,7 @@ export function TechnologyLabels({
             onPointerLeave={() => onActivate('')}
             onFocus={() => onActivate(technology.id)}
             onBlur={() => onActivate('')}
-            className="pointer-events-auto absolute -translate-x-1/2 whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.12em] transition-colors"
+            className="pointer-events-auto absolute -translate-x-1/2 whitespace-nowrap text-[8px] font-medium uppercase tracking-[0.08em] transition-colors sm:text-[10px] sm:tracking-[0.12em]"
             style={{
               left: position.x,
               top: position.y + 14,

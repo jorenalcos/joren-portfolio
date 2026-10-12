@@ -9,6 +9,8 @@ export interface PortfolioProject {
   year: string
   status: 'Featured' | 'In progress' | 'Client work'
   featured: boolean
+  image?: string
+  liveUrl?: string
 }
 
 export const projects: PortfolioProject[] = [
@@ -18,18 +20,20 @@ export const projects: PortfolioProject[] = [
     category: 'FULL-STACK DEVELOPMENT',
     title: 'CJ Restaurant',
     description:
-      'A restaurant platform focused on product browsing, ordering experiences, and a scalable API architecture.',
+      'A restaurant ordering platform featuring product browsing, category filtering, cart management, and a scalable API architecture.',
     technologies: [
       'React',
       'TypeScript',
       'Node.js',
       'Prisma',
       'PostgreSQL',
-      'Docker',
+      'Vercel',
     ],
     year: '2026',
-    status: 'In progress',
+    status: 'Featured',
     featured: true,
+    image: '/public/images/projects/cj-restaurant.png.png',
+    liveUrl: 'https://cj-restaurant-29.vercel.app/',
   },
   {
     id: 'job-management',

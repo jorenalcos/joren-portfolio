@@ -1,8 +1,8 @@
 import { Container } from '../layout/Container'
 
-const links = [
+const navItems = [
   { label: 'About', href: '#about' },
-   { label: 'Stack', href: '#stack' },
+  { label: 'Stack', href: '#stack' },
   { label: 'Work', href: '#work' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
@@ -20,21 +20,13 @@ export function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {links.map((link) => (
+          {navItems.map((item) => (
             <a
-              key={link.href}
-              href={link.href}
-              className="
-                text-xs
-                uppercase
-                tracking-[0.2em]
-                text-white/50
-                transition-colors
-                duration-300
-                hover:text-white
-              "
+              key={item.href}
+              href={item.href}
+              className="transition-colors duration-300 hover:text-white"
             >
-              {link.label}
+              {item.label}
             </a>
           ))}
         </nav>

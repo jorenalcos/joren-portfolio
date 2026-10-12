@@ -22,21 +22,29 @@ export function Contact() {
   })
 
   useLayoutEffect(() => {
-    if (!sectionRef.current) return
+    const element = sectionRef.current
+    if (!element) return
 
     const context = gsap.context(() => {
-      gsap.from('.contact-content', {
-        y: 45,
-        autoAlpha: 0,
-        duration: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '.contact-content',
-          start: 'top 85%',
-          once: true,
+      gsap.fromTo(
+        element,
+        {
+          y: 45,
+          autoAlpha: 0,
         },
-      })
-    }, sectionRef)
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            once: true,
+          },
+        },
+      )
+    })
 
     return () => context.revert()
   }, [])

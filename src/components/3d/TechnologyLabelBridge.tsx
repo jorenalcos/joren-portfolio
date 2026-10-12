@@ -1,6 +1,6 @@
 
 import { useFrame, useThree } from '@react-three/fiber'
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import { technologies } from '../../data/technologies'
 
@@ -27,6 +27,7 @@ export function TechnologyLabelBridge({
   onPositionsChange,
 }: TechnologyLabelBridgeProps) {
   const { camera, size } = useThree()
+  const elapsedRef = useRef(0)
 
   const points = useMemo<ProjectedPoint[]>(
     () =>
@@ -42,8 +43,12 @@ export function TechnologyLabelBridge({
 
   const projected = useMemo(() => new THREE.Vector3(), [])
 
-  useFrame(({ scene }) => {
+  useFrame(({ scene }, delta) => {
+    elapsedRef.current += delta
     const network = scene.getObjectByName('technology-network')
+
+    // Update HTML label positions at most 30 times per second.
+    if (elapsedRef.current < 1 / 30) return
 
     points.forEach((point) => {
       projected.copy(point.position)

@@ -95,7 +95,7 @@ export const technologies: Technology[] = [
     category: 'devops',
     description:
       'Containerizing applications and maintaining consistent environments.',
-    experience: 'Intermediate',
+    experience: 'Professional',
     position: [2.5, -1.8, 0],
   },
   {
@@ -115,5 +115,32 @@ export const technologies: Technology[] = [
       'Customizing ecommerce stores, product catalogs, and WooCommerce functionality.',
     experience: 'Professional',
     position: [3.1, -2.7, 0],
+  },
+  {
+    id: 'mysql',
+    name: 'MySQL',
+    category: 'database',
+    description:
+      'Designing relational databases, queries, and data-driven applications.',
+    experience: 'Professional',
+    position: [-0.9, -3.2, 0],
+  },
+  {
+    id: 'vercel',
+    name: 'Vercel',
+    category: 'devops',
+    description:
+      'Deploying frontend applications with preview environments and production builds.',
+    experience: 'Intermediate',
+    position: [3.7, -0.9, 0],
+  },
+  {
+    id: 'vue',
+    name: 'Vue.js',
+    category: 'frontend',
+    description:
+      'Building component-based user interfaces with Vue.',
+    experience: 'Intermediate',
+    position: [-3.8, 1.8, 0],
   },
 ]

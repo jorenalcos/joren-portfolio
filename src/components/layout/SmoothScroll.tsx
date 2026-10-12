@@ -12,6 +12,7 @@ export function SmoothScroll({
     const lenis = new Lenis({
       autoRaf: true,
       lerp: 0.1,
+      anchors: true,
     })
 
     return () => {

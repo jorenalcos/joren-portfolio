@@ -45,11 +45,6 @@ export function TechnologyNetwork({
       Math.sin(time * 0.12) * 0.04
   })
 
-  console.log(
-    'React technology:',
-    technologies.find((technology) => technology.id === 'react'),
-  )
-
   return (
     <group
       ref={group}
@@ -83,12 +78,9 @@ export function TechnologyNetwork({
           return (
             <Line
               key={`tech-line-${index}`}
-              points={[
-                from.position,
-                to.position,
-              ]}
+              points={[from.position, to.position]}
               transparent
-              opacity={isActive ? 0.65 : 0.12}
+              opacity={isActive ? 0.8 : 0.12}
               lineWidth={isActive ? 2 : 1}
             />
           )

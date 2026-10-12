@@ -23,10 +23,10 @@ function App() {
         <Experience />
         <Contact />
 
-        <section
+        {/* <section
           id="work"
           className="min-h-screen"
-        />
+        /> */}
       </main>
     </SmoothScroll>
   )

@@ -46,10 +46,10 @@ export function TechnologyScene({
   )
 
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-[380px] w-full sm:h-[480px] lg:h-[620px]">
       <Canvas
         camera={{ position: [0, 0, 10], fov: 40 }}
-        dpr={[1, 1.5]}
+        dpr={[1, 1.25]}
         gl={{ antialias: true, alpha: true }}
       >
         <Suspense fallback={null}>
