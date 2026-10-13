@@ -75,6 +75,7 @@ export function Stack() {
         border-white/5
         py-32
         md:py-48
+        md:min-h-auto
       "
     >
       <Container>

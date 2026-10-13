@@ -68,6 +68,7 @@ export function Hero() {
   return (
     <section
       ref={hero}
+      id="hero"
       className="relative min-h-screen overflow-hidden"
     >
       <div className="hero-scene absolute inset-0">

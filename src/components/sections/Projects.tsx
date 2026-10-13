@@ -45,7 +45,7 @@ export function Projects() {
   return (
     <Section
       id="work"
-      className="border-b border-white/5 py-28 md:py-40"
+      className="border-b border-white/5 py-28 md:py-40 md:min-h-[auto]"
     >
       <Container>
         <div ref={sectionRef}>

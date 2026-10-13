@@ -13,8 +13,21 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <Container className="flex h-20 items-center justify-between">
         <a
-          href="#"
-          className="text-sm font-semibold uppercase tracking-[0.25em]"
+          href="#hero"
+          onClick={(event) => {
+            event.preventDefault()
+            window.history.replaceState(
+              null,
+              '',
+              window.location.pathname,
+            )
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            })
+          }}
+          className="text-xs font-semibold tracking-[0.25em] text-white transition-opacity duration-300 hover:opacity-60"
+          aria-label="Back to top"
         >
           JA
         </a>
